@@ -1,0 +1,13 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key: 8ba46910-616f-4516-a7f3-066567d184fa
+  app: hidden-spire-62892
+  on:
+    repo: jmutt78/Hot-Cold
